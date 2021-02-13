@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import PetsIcon from "@material-ui/icons/Pets";
 import Typography from "@material-ui/core/Typography";
+import Slider from "./Slider";
 
 function Copyright() {
 	return (
@@ -46,10 +47,7 @@ export default function SignInSide() {
 				elevation={6}
 				square
 			>
-				<span>
-					<h1>한눈에 보는 당신의 반려동물</h1>
-					..이 들어갈 예정
-				</span>
+				<Slider />
 			</Grid>
 			<Grid
 				item
@@ -114,7 +112,7 @@ export default function SignInSide() {
 						</Grid>
 					</form>
 				</div>
-				<Box mt={4}>
+				<Box className="copyrightArea" mt={4}>
 					<Copyright />
 					<br />
 					<ContactUs />
@@ -126,7 +124,7 @@ export default function SignInSide() {
 				color="primary"
 				size="large"
 				className="btn"
-				href="# "
+				href="/pets"
 			>
 				둘러보기
 			</Button>
